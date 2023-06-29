@@ -1,0 +1,1437 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!--====== Title ======-->
+    <title>A.J.A-TOGO</title>
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="shortcut icon"
+      href="{% static 'assets/images/cgf.jpg' %}"
+      type="image/png"
+    />
+
+    <!--====== CSS Files LinkUp ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/glightbox.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/lineIcons.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!--====== PRELOADER PART START ======-->
+    <div class="preloader">
+      <div class="loader">
+        <div class="spinner">
+          <div class="spinner-container">
+            <div class="spinner-rotator">
+              <div class="spinner-left">
+                <div class="spinner-circle"></div>
+              </div>
+              <div class="spinner-right">
+                <div class="spinner-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+    <header class="header-area">
+      <div class="navbar-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                  <img src="{% static 'assets/images/logo/dfsd.png' %}" alt="Logo" />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="toggler-icon"> </span>
+                  <span class="toggler-icon"> </span>
+                  <span class="toggler-icon"> </span>
+                </button>
+               
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon"> </span>
+                    <span class="toggler-icon"> </span>
+                    <span class="toggler-icon"> </span>
+                  </button>
+                  <div
+                  class="collapse navbar-collapse sub-menu-bar"
+                  id="navbarSupportedContent"
+                >
+                  <ul id="nav" class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="" href="{% url 'accueil' %}">Accueil</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="page-scroll" href="#features">services</a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="" href="{% url 'about' %}">Apropos</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                      <a href="{% url 'team' %}">Notre Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="{% url 'blog' %}" >Blog</a>
+                    </li>
+                  </ul>
+                </div> 
+                <!-- navbar collapse -->
+
+                <li class="nav-item dropdown">
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown"><i class="fas fa-user"></i></div>
+                  
+                  <button type=""><a class="dropdown-item" href="{% url 'register' %}">Login</a></button>
+                  </button></div>
+                  <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  </a>
+                </div>
+                
+                 
+                </li>
+
+               
+              <!-- navbar -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+      
+      
+      <!-- navbar area -->
+      {% block content %}
+
+      <div
+        id="home"
+        class="header-hero bg_cover"
+        style="background-image: url({% static 'assets/images/header/fgh.png' %})"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4">
+              <div class="header-hero-content text-center">
+                <h3
+                  class="header-sub-title wow fadeInUp"
+                  data-wow-duration="no limite"
+                  data-wow-delay="no limite"
+                >
+
+
+                  Association - Justice - Accessible  TOGO
+                </h3>
+                <h2
+                  class="header-title wow fadeInUp"
+                  data-wow-duration="1.3s"
+                  data-wow-delay="0.5s"
+                >
+                  ( A. J. A - TOGO)
+                </h2>
+                <p
+                  class="text wow fadeInUp"
+                  data-wow-duration="1.3s"
+                  data-wow-delay="0.8s"
+                >
+                  << Faire de l'accès à la justice une réalité >>
+        
+                </p>
+                <!-- <a
+                  href="javascript:void(0)"
+                  class="main-btn wow fadeInUp"
+                  data-wow-duration="1.3s"
+                  data-wow-delay="1.1s"
+                >
+                  Get Started
+                </a> -->
+              </div>
+              <!-- header hero content -->
+            </div>
+          </div>
+          <!-- row -->
+          <!-- <div class="row">
+            <div class="col-lg-12">
+              <div
+                class="header-hero-image text-center wow fadeIn"
+                data-wow-duration="1.3s"
+                data-wow-delay="1.4s"
+              >
+                <img src="{% static 'assets/images/header/header-hero.png' %}" alt="hero" />
+              </div> -->
+              <!-- header hero image -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+        <div id="particles-1" class="particles"></div>
+      </div>
+      <!-- header hero -->
+    </header>
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== BRAND PART START ======-->
+    <div class="brand-area pt-90">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div
+              class="
+                brand-logo
+                d-flex
+                align-items-center
+                justify-content-center justify-content-md-between
+              "
+              <div
+                class="single-logo mt-30 wow fadeIn"
+                data-wow-duration="1s"
+                data-wow-delay="0.2s"
+
+                <img src="{% static 'assets/images/brands/uideck.svg' %}" alt="brand" />
+              </div>
+              
+    <!--====== BRAND PART ENDS ======-->
+              
+    
+    <!--====== VIDEO COUNTER PART START ======-->
+    <section id="facts" class="video-counter pt-70">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 order-lg-last">
+            <div
+              class="counter-wrapper mt-50 wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.8s"
+            >
+              <div class="counter-content">
+                <div class="section-title">
+                  <div class="line"></div>
+                  <h3 class="title">Cool facts <span> about this app</span></h3>
+                </div>
+                <!-- section title -->
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam
+                  nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
+              </div>
+              <!-- counter content -->
+              <div class="row no-gutters">
+                <div class="col-4">
+                  <div
+                    class="
+                      single-counter
+                      counter-color-1
+                      d-flex
+                      align-items-center
+                      justify-content-center
+                    "
+                  >
+                    <!-- <div class="counter-items text-center">
+                      <span
+                        class="count countup text-uppercase"
+                        cup-end="125"
+                      ></span>
+
+                      <p class="text">Downloads</p>
+                    </div> -->
+                  </div>
+                  <!-- single counter -->
+                </div>
+                <div class="col-4">
+                  <div
+                    class="
+                      single-counter
+                      counter-color-2
+                      d-flex
+                      align-items-center
+                      justify-content-center
+                    "
+                  >
+                    
+                  </div>
+                  <!-- single counter -->
+                </div>
+                <div class="col-4">
+                  <div
+                    class="
+                      single-counter
+                      counter-color-3
+                      d-flex
+                      align-items-center
+                      justify-content-center
+                    "
+                  >
+                    <div class="counter-items text-center">
+                      <span
+                        class="count countup text-uppercase"
+                        cup-end="59"
+                      ></span>
+                      <p class="text">User Rating</p>
+                    </div>
+                  </div>
+                  <!-- single counter -->
+                </div>
+              </div>
+              <!-- row -->
+            </div>
+            <!-- counter wrapper -->
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="video-content mt-50 wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
+            >
+              <img class="dots" src="{% static 'assets/images/video/dots.svg' %}" alt="dots" />
+              <div class="video-wrapper">
+                <div class="video-image">
+                  <img src="{% static 'assets/images/video/dcf.mp4' %}" alt="video" />
+                </div>
+                <div class="video-icon">
+                  <a
+                    href="https://youtu.be/IHaIr-xXiEk"
+                    class="video-popup glightbox"
+                  >
+                    <i class="lni lni-play"> </i>
+                  </a>
+                </div>
+              </div>
+              <!-- video wrapper -->
+            </div>
+            <!-- video content -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+    <!--====== VIDEO COUNTER PART ENDS ======-->
+
+    <!--====== SERVICES PART START ======-->
+    <section id="features" class="services-area pt-120">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="section-title text-center pb-40">
+              <div class="line m-auto"></div>
+              <!-- <h3 class="title">
+                Clean and simple design,
+                <span> Comes with everything you need to get started!</span>
+              </h3> -->
+            </div>
+            <!-- section title -->
+          </div>
+        </div>
+        <!-- row -->
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-7 col-sm-8">
+            <div
+              class="single-services text-center mt-30 wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.2s"
+            >
+              <div class="services-icon">
+                <img
+                  class="shape"
+                  src="{% static 'assets/images/services/fg_n.jpg' %}"
+                  alt="shape"
+                />
+                <img
+                  class="shape-1"
+                  src="{% static 'assets/images/services/sdsd.jpg' %}"
+                  alt="shape"
+                />
+                <i class="lni lni-baloon"> </i>
+              </div>
+              <div class="services-content mt-30">
+                <h4 class="services-title">
+                  <a href="javascript:void(0)">Clean</a>
+                </h4>
+                <p class="text">
+                  Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+                  seddiam nonu eirmod tempor invidunt labore.
+                </p>
+                <a class="more" href="{% url 'service1' %}"
+                  >Plus de détail <i class="lni lni-chevron-right"> </i>
+                </a>
+              </div>
+            </div>
+            <!-- single services -->
+          </div>
+          <div class="col-lg-4 col-md-7 col-sm-8">
+            <div
+              class="single-services text-center mt-30 wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
+            >
+              <div class="services-icon">
+                <img
+                  class="shape"
+                  src="{% static 'assets/images/services/zzads.jpg.png' %}"
+                  alt="shape"
+                />
+                <img
+                  class="shape-1"
+                  src="{% static 'assets/images/services/fgt.jpg' %}"
+                  alt="shape"
+                />
+                <i class="lni lni-cog"> </i>
+              </div>
+              <div class="services-content mt-30">
+                <h4 class="services-title">
+                  <a href="javascript:void(0)">Robust</a>
+                </h4>
+                <p class="text">
+                  Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+                  seddiam nonu eirmod tempor invidunt labore.
+                </p>
+                <a class="more" href="{% url 'service2' %}"
+                  >Plus de détail <i class="lni lni-chevron-right"> </i>
+                </a>
+              </div>
+            </div>
+            <!-- single services -->
+          </div>
+          <div class="col-lg-4 col-md-7 col-sm-8">
+            <div
+              class="single-services text-center mt-30 wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.8s"
+            >
+              <div class="services-icon">
+                <img
+                  class="shape"
+                  src="{% static 'assets/images/services/zzads.jpg.png' %}"
+                  alt="shape"
+                />
+                <!-- <img
+                  class="shape-1"
+                  src="{% static 'assets/images/services/azgds.jpg.png' %}"
+                  alt="shape"
+                /> -->
+                <i class="lni lni-bolt-alt"> </i>
+              </div>
+              <div class="services-content mt-30">
+                <h4 class="services-title">
+                  <a href="javascript:void(0)">Powerful</a>
+                </h4>
+                <p class="text">
+                  Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+                  seddiam nonu eirmod tempor invidunt labore.
+                </p>
+                <a class="more" href="{% url 'service3' %}"
+                  >Plus de détail <i class="lni lni-chevron-right"> </i>
+                </a>
+              </div>
+            </div>
+            <!-- single services -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+    <!--====== SERVICES PART ENDS ======-->
+ <!--====== SERVICES PART START ======-->
+ <section id="features" class="services-area pt-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="section-title text-center pb-40">
+          <div class="line m-auto"></div>
+          <!-- <h3 class="title">
+            Clean and simple design,
+            <span> Comes with everything you need to get started!</span>
+          </h3> -->
+        </div>
+        <!-- section title -->
+      </div>
+    </div>
+    <!-- row -->
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div
+          class="single-services text-center mt-30 wow fadeIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.2s"
+        >
+          <div class="services-icon">
+            <img
+              class="shape"
+              src="{% static 'assets/images/services/aaa.jpg' %}"
+              alt="shape"
+            />
+            <!-- <img
+              class="shape-1"
+              src="{% static 'assets/images/services/services-shape-1.svg' %}"
+              alt="shape"
+            /> -->
+            <i class="lni lni-baloon"> </i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title">
+              <a href="javascript:void(0)">Clean</a>
+            </h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+              seddiam nonu eirmod tempor invidunt labore.
+            </p>
+            <a class="more" href="javascript:void(0)"
+              >Learn More <i class="lni lni-chevron-right"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- single services -->
+      </div>
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div
+          class="single-services text-center mt-30 wow fadeIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.5s"
+        >
+          <div class="services-icon">
+            <img
+              class="shape"
+              src="{% static 'assets/images/services/bbb.jpg' %}"
+              alt="shape"
+            />
+            <!-- <img
+              class="shape-1"
+              src="{% static 'assets/images/services/services-shape-2.svg' %}"
+              alt="shape"
+            /> -->
+            <i class="lni lni-cog"> </i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title">
+              <a href="javascript:void(0)">journee de la ceremonie</a>
+            </h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+              seddiam nonu eirmod tempor invidunt labore.
+            </p>
+            <a class="more" href="javascript:void(0)"
+              >Learn More <i class="lni lni-chevron-right"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- single services -->
+      </div>
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div
+          class="single-services text-center mt-30 wow fadeIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.8s"
+        >
+          <div class="services-icon">
+            <img
+              class="shape"
+              src="{% static 'assets/images/services/ccc.jpg' %}"
+              alt="shape"
+            />
+            <!-- <img
+              class="shape-1"
+              src="{% static 'assets/images/services/services-shape-3.svg' %}"
+              alt="shape"
+            /> -->
+            <i class="lni lni-bolt-alt"> </i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title">
+              <a href="javascript:void(0)"> la reunion </a>
+            </h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+              seddiam nonu eirmod tempor invidunt labore.
+            </p>
+            <a class="more" href="javascript:void(0)"
+              >Learn More <i class="lni lni-chevron-right"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- single services -->
+      </div>
+    </div>
+    <!-- row -->
+  </div>
+  <!-- container -->
+</section>
+<!--====== SERVICES PART ENDS ======-->
+<div class="feed-section"></div>
+ <!--====== SERVICES PART START ======-->
+ <section id="features" class="services-area pt-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="section-title text-center pb-40">
+          <div class="line m-auto"></div>
+          <!-- <h3 class="title">
+            Clean and simple design,
+            <!-- <span> Comes with everything you need to get started!</span> -->
+          </h3> -->
+        </div>
+        <!-- section title -->
+      </div>
+    </div>
+    <!-- row -->
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div
+          class="single-services text-center mt-30 wow fadeIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.2s"
+        >
+          <div class="services-icon">
+            <img
+              class="shape"
+              src="{% static 'assets/images/services/eee.jpg' %}"
+              alt="shape"
+            />
+            <!-- <img
+              class="shape-1"
+              src="{% static 'assets/images/services/services-shape-1.svg' %}"
+              alt="shape"
+            /> -->
+            <i class="lni lni-baloon"> </i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title">
+              <a href="javascript:void(0)">la formation</a>
+            </h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+              seddiam nonu eirmod tempor invidunt labore.
+            </p>
+            <a class="more" href="javascript:void(0)"
+              >Learn More <i class="lni lni-chevron-right"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- single services -->
+      </div>
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div
+          class="single-services text-center mt-30 wow fadeIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.5s"
+        >
+          <div class="services-icon">
+            <img
+              class="shape"
+              src="{% static 'assets/images/services/fff.jpg' %}"
+              alt="shape"
+            />
+            <!-- <img
+              class="shape-1"
+              src="{% static 'assets/images/services/services-shape-2.svg' %}"
+              alt="shape"
+            /> -->
+            <i class="lni lni-cog"> </i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title">
+              <a href="javascript:void(0)">Robust</a>
+            </h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+              seddiam nonu eirmod tempor invidunt labore.
+            </p>
+            <a class="more" href="javascript:void(0)"
+              >Learn More <i class="lni lni-chevron-right"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- single services -->
+      </div>
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div
+          class="single-services text-center mt-30 wow fadeIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.8s"
+        >
+          <div class="services-icon">
+            <img
+              class="shape"
+              src="{% static 'assets/images/services/ggg.jpg' %}"
+              alt="shape"
+            />
+            <!-- <img
+              class="shape-1"
+              src="{% static 'assets/images/services/services-shape-3.svg' %}"
+              alt="shape"
+            /> -->
+            <i class="lni lni-bolt-alt"> </i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title">
+              <a href="javascript:void(0)">Powerful</a>
+            </h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+              seddiam nonu eirmod tempor invidunt labore.
+            </p>
+            <a class="more" href="javascript:void(0)"
+              >Learn More <i class="lni lni-chevron-right"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- single services -->
+      </div>
+    </div>
+    <!-- row -->
+  </div>
+  <!-- container -->
+</section>
+<!--====== SERVICES PART ENDS ======-->
+
+ <!--====== SERVICES PART START ======-->
+ <section id="features" class="services-area pt-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="section-title text-center pb-40">
+          <div class="line m-auto"></div>
+          <!-- <h3 class="title">
+            Clean and simple design,
+            <span> Comes with everything you need to get started!</span>
+          </h3> -->
+        </div>
+        <!-- section title -->
+      </div>
+    </div>
+    <!-- row -->
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div
+          class="single-services text-center mt-30 wow fadeIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.2s"
+        >
+          <div class="services-icon">
+            <img
+              class="shape"
+              src="{% static 'assets/images/services/hhh.jpg' %}"
+              alt="shape"
+            />
+            <!-- <img
+              class="shape-1"
+              src="{% static 'assets/images/services/services-shape-1.svg' %}"
+              alt="shape"
+            /> -->
+            <i class="lni lni-baloon"> </i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title">
+              <a href="javascript:void(0)">Clean</a>
+            </h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+              seddiam nonu eirmod tempor invidunt labore.
+            </p>
+            <a class="more" href="javascript:void(0)"
+              >Learn More <i class="lni lni-chevron-right"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- single services -->
+      </div>
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div
+          class="single-services text-center mt-30 wow fadeIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.5s"
+        >
+          <div class="services-icon">
+            <img
+              class="shape"
+              src="{% static 'assets/images/services/iii.jpg' %}"
+              alt="shape"
+            />
+            <!-- <img
+              class="shape-1"
+              src="{% static 'assets/images/services/services-shape-2.svg' %}"
+              alt="shape"
+            /> -->
+            <i class="lni lni-cog"> </i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title">
+              <a href="javascript:void(0)">Robust</a>
+            </h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+              seddiam nonu eirmod tempor invidunt labore.
+            </p>
+            <a class="more" href="javascript:void(0)"
+              >Learn More <i class="lni lni-chevron-right"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- single services -->
+      </div>
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div
+          class="single-services text-center mt-30 wow fadeIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.8s"
+        >
+          <div class="services-icon">
+            <img
+              class="shape"
+              src="{% static 'assets/images/services/jjj.jpg' %}"
+              alt="shape"
+            />
+            <!-- <img
+              class="shape-1"
+              src="{% static 'assets/images/services/services-shape-3.svg' %}"
+              alt="shape"
+            /> -->
+            <i class="lni lni-bolt-alt"> </i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title">
+              <a href="javascript:void(0)">Powerful</a>
+            </h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+              seddiam nonu eirmod tempor invidunt labore.
+            </p>
+            <a class="more" href="javascript:void(0)"
+              >Learn More <i class="lni lni-chevron-right"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- single services -->
+      </div>
+    </div>
+    <!-- row -->
+  </div>
+  <!-- container -->
+</section>
+<!--====== SERVICES PART ENDS ======-->
+ <!--====== SERVICES PART START ======-->
+ <section id="features" class="services-area pt-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="section-title text-center pb-40">
+          <div class="line m-auto"></div>
+          <!-- <h3 class="title">
+            Clean and simple design,
+            <span> Comes with everything you need to get started!</span>
+          </h3> -->
+        </div>
+        <!-- section title -->
+      </div>
+    </div>
+    <!-- row -->
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div
+          class="single-services text-center mt-30 wow fadeIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.2s"
+        >
+          <div class="services-icon">
+            <img
+              class="shape"
+              src="{% static 'assets/images/services/kl.jpg' %}"
+              alt="shape"
+            />
+            <!-- <img
+              class="shape-1"
+              src="{% static 'assets/images/services/services-shape-1.svg' %}"
+              alt="shape"
+            /> -->
+            <i class="lni lni-baloon"> </i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title">
+              <a href="javascript:void(0)">Clean</a>
+            </h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+              seddiam nonu eirmod tempor invidunt labore.
+            </p>
+            <a class="more" href="javascript:void(0)"
+              >Learn More <i class="lni lni-chevron-right"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- single services -->
+      </div>
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div
+          class="single-services text-center mt-30 wow fadeIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.5s"
+        >
+          <div class="services-icon">
+            <img
+              class="shape"
+              src="{% static 'assets/images/services/services-shape.svg' %}"
+              alt="shape"
+            />
+            <img
+              class="shape-1"
+              src="{% static 'assets/images/services/services-shape-2.svg' %}"
+              alt="shape"
+            />
+            <i class="lni lni-cog"> </i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title">
+              <a href="javascript:void(0)">Robust</a>
+            </h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+              seddiam nonu eirmod tempor invidunt labore.
+            </p>
+            <a class="more" href="javascript:void(0)"
+              >Learn More <i class="lni lni-chevron-right"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- single services -->
+      </div>
+      <div class="col-lg-4 col-md-7 col-sm-8">
+        <div
+          class="single-services text-center mt-30 wow fadeIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.8s"
+        >
+          <div class="services-icon">
+            <img
+              class="shape"
+              src="{% static 'assets/images/services/services-shape.svg' %}"
+              alt="shape"
+            />
+            <img
+              class="shape-1"
+              src="{% static 'assets/images/services/services-shape-3.svg' %}"
+              alt="shape"
+            />
+            <i class="lni lni-bolt-alt"> </i>
+          </div>
+          <div class="services-content mt-30">
+            <h4 class="services-title">
+              <a href="javascript:void(0)">Powerful</a>
+            </h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
+              seddiam nonu eirmod tempor invidunt labore.
+            </p>
+            <a class="more" href="javascript:void(0)"
+              >Learn More <i class="lni lni-chevron-right"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- single services -->
+      </div>
+    </div>
+    <!-- row -->
+  </div>
+  <!-- container -->
+</section>
+<!--====== SERVICES PART ENDS ======-->
+    <section id="about">
+      <!--====== ABOUT PART START ======-->
+      <div class="about-area pt-70">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div
+                class="about-content mt-50 wow fadeInLeftBig"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                <div class="section-title">
+                  <div class="line"></div>
+                  <h3 class="title">
+                     (AJA-TOGO)  <span>Justice Accessible Togo</span>
+                  </h3>
+                </div>
+                <!-- section title -->
+                <p class="text">
+                    
+                </p>
+                <!-- <a href="javascript:void(0)" class="main-btn">Try it Free</a> -->
+              </div>
+              <!-- about content -->
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="about-image text-center mt-50 wow fadeInRightBig"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                <img src="{% static 'assets/images/about/' %}" alt="about" />
+              </div>
+              <!-- about image -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+        <div class="about-shape-1">
+          <img src="{% static 'assets/images/about/about-shape-1.svg' %}" alt="shape" />
+        </div>
+      </div>
+      <!--====== ABOUT PART ENDS ======-->
+
+      <!--====== ABOUT PART START ======-->
+      <div class="about-area pt-70">
+        <div class="about-shape-2">
+          <img src="{% static 'assets/images/about/about-shape-2.svg' %}" alt="shape" />
+        </div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-last">
+              <div
+                class="about-content ms-lg-auto mt-50 wow fadeInLeftBig"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                <div class="section-title">
+                  <div class="line"></div>
+                  <h3 class="title">
+                    (AJA-TOGO) <span> Notre Mission </span>
+                  </h3>
+                </div>
+                <!-- section title -->
+                <p class="text">
+                  Justice Accessible Togo est une association togolaise qui a pour mission de fournir une assistance juridique gratuite aux personnes défavorisées et marginalisées du pays.
+
+Fondée en 2017 par un groupe de greffiers et de juristes engagés, l'association se fixe pour objectifs de promouvoir l'accès à la justice pour tous et de lutter contre les discriminations et les abus de pouvoir.
+
+Pour cela, Justice Accessible Togo organise des consultations juridiques gratuites dans les quartiers populaires et les zones rurales où les services juridiques sont peu accessibles. Elle offre également une assistance juridique en ligne, permettant ainsi à un plus grand nombre de personnes de bénéficier de son aide.
+
+L'association travaille également à sensibiliser les communautés locales sur leurs droits et sur les procédures légales à suivre en cas de violation de ces droits.
+
+En offrant une assistance juridique gratuite et en faisant connaître les droits des personnes défavorisées, Justice Accessible Togo contribue à renforcer la justice et l'égalité au Togo.
+                </p>
+                <!-- <a href="javascript:void(0)" class="main-btn">Try it Free</a> -->
+              </div>
+              <!-- about content -->
+            </div>
+            <div class="col-lg-6 order-lg-first">
+              <div
+                class="about-image text-center mt-50 wow fadeInRightBig"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                <img src="{% static 'assets/images/about/about2.svg' %}" alt="about" />
+              </div>
+              <!-- about image -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+      <!--====== ABOUT PART ENDS ======-->
+
+      <!--====== ABOUT PART START ======-->
+      <div class="about-area pt-70">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div
+                class="about-content mt-50 wow fadeInLeftBig"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                <div class="section-title">
+                  <div class="line"></div>
+                  <h3 class="title">
+                    <span>(A-TOGO)</span> Rapport d'activite AJA-CEJA
+                  </h3>
+                </div>
+                <!-- section title -->
+                <p class="text">
+                  Dans le cadre de ses activités en partenariat avec le Centre d'Etudes Juridiques Africaines (CEJA), les 
+membres d’AJA Togo ont bénéficié d’une séance de formation portant sur le montage de projet et la 
+recherche de financement. La formation a été donnée par Monsieur Ghislain Patrick LESSENE (Dr), 
+Directeur exécutif du Centre d'Etudes Juridiques Africaines (CEJA) au centre multimédia du 
+Ministère de la Justice à Lomé (Togo) les 8 et 9 juillet 2017.
+Débutée à 9h, La présentation a été faite essentiellement via le power point pendant une durée d’une 
+heure suivie des questions-réponses. A l'image des fondations d'une maison, la phase de montage 
+constitue la base du projet. Elle vise à donner de la consistance à une idée qui deviendra un projet
+concret et durable à partir des étapes suivantes :
+Phase 1 : L’identification du projet au cours de laquelle vous allez tester et préciser les contours de 
+votre idée initiale ;
+Phase 2 : La planification qui va vous permettre de concrétiser votre idée en un projet réalisable ;
+Phase 3 : La présentation du projet afin d’obtenir des financements. La recherche de financements 
+pour laquelle on élabore un dossier de projet et identifier les sources de financement potentielles est 
+importante pour la mise en œuvre ou la phase d'exécution. Il s'agit de la phase opérationnelle du
+projet. Elle doit aboutir à des résultats concrets permettant d'atteindre les objectifs fixés.
+Phase 4 : Le suivi est l’étape consistant à vérifier la bonne exécution des activités du projet, identifier
+les éventuelles difficultés, et à réajuster les moyens nécessaires pour atteindre les résultats attendus. 
+Le suivi a lieu durant l’étape de mise en œuvre.
+Phase 5 : L'évaluation
+L'évaluation se déroule généralement en fin de projet, mais des évaluations intermédiaires permettent 
+une réorientation des actions du projet. L'évaluation consiste à porter une appréciation sur le projet en 
+s'intéressant à sa conception, sa mise en œuvre et ses résultats en fonction des objectifs initiaux.
+L'évaluation constitue un outil d'aide à la décision pour la conception d'un futur projet.
+Somme toute, nous matérialisons tout ce qui précède sur les schémas ci-après.
+Schéma n°1 
+                </p>
+                <!-- <a href="javascript:void(0)" class="main-btn">Try it Free</a> -->
+              </div>
+              <!-- about content -->
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="about-image text-center mt-50 wow fadeInRightBig"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                <img src="{% static 'assets/images/about/ghhg.jpeg' %}" alt="about" />
+              </div>
+              <!-- about image -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+        <div class="about-shape-1">
+          <img src="{% static 'assets/images/about/about-shape-1.svg' %}" alt="shape" />
+        </div>
+      </div>
+    </section>
+    <!--====== ABOUT PART ENDS ======-->
+
+
+    
+    <!--====== VIDEO COUNTER PART START ======-->
+    <section id="facts" class="video-counter pt-70">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 order-lg-last">
+            <div
+              class="counter-wrapper mt-50 wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.8s"
+            >
+              <div class="counter-content">
+                <div class="section-title">
+                  <div class="line"></div>
+                  <h3 class="title">Cool facts <span> about this app</span></h3>
+                </div>
+                <!-- section title -->
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam
+                  nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
+              </div>
+              <!-- counter content -->
+              <div class="row no-gutters">
+                <div class="col-4">
+                  <div
+                    class="
+                      single-counter
+                      counter-color-1
+                      d-flex
+                      align-items-center
+                      justify-content-center
+                    "
+                  >
+                    <div class="counter-items text-center">
+                      <span
+                        class="count countup text-uppercase"
+                        cup-end="125"
+                      ></span>
+
+                      <p class="text">Downloads</p>
+                    </div>
+                  </div>
+                  <!-- single counter -->
+                </div>
+                <div class="col-4">
+                  <div
+                    class="
+                      single-counter
+                      counter-color-2
+                      d-flex
+                      align-items-center
+                      justify-content-center
+                    "
+                  >
+                    <div class="counter-items text-center">
+                      <span
+                        class="count countup text-uppercase"
+                        cup-end="87"
+                      ></span>
+                      <p class="text">Active Users</p>
+                    </div>
+                  </div>
+                  <!-- single counter -->
+                </div>
+                <div class="col-4">
+                  <div
+                    class="
+                      single-counter
+                      counter-color-3
+                      d-flex
+                      align-items-center
+                      justify-content-center
+                    "
+                  >
+                    <div class="counter-items text-center">
+                      <span
+                        class="count countup text-uppercase"
+                        cup-end="59"
+                      ></span>
+                      <p class="text">User Rating</p>
+                    </div>
+                  </div>
+                  <!-- single counter -->
+                </div>
+              </div>
+              <!-- row -->
+            </div>
+            <!-- counter wrapper -->
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="video-content mt-50 wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
+            >
+              <img class="dots" src="{% static 'assets/images/video/dots.svg' %}" alt="dots" />
+              <div class="video-wrapper">
+                <div class="video-image">
+                  <img src="{% static 'assets/images/video/dcf.mp4' %}" alt="video" />
+                </div>
+                <div class="video-icon">
+                  <a
+                    href="https://youtu.be/IHaIr-xXiEk"
+                    class="video-popup glightbox"
+                  >
+                    <i class="lni lni-play"> </i>
+                  </a>
+                </div>
+              </div>
+              <!-- video wrapper -->
+            </div>
+            <!-- video content -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+    <!--====== VIDEO COUNTER PART ENDS ======-->
+
+
+
+    {% endblock %}
+    
+
+    <!-- ====== FOOTER PART START ====== -->
+    <div class="container">
+        <footer id="footer" class="footer-area pt-120">
+        <div
+          class="subscribe-area wow fadeIn"
+          data-wow-duration="1s"
+          data-wow-delay="0.5s"
+        >
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="subscribe-content mt-45">
+                <h2 class="subscribe-title">
+                  (A.J.A-TOGO) <span> Association justice Accessible TOGO </span>
+                </h2>
+              </div>
+            </div> 
+            
+            <div class="col-lg-6">
+              <!-- <div class="subscribe-form mt-50">
+                <!-- <form action="#">
+                  <input type="text" placeholder="Enter eamil" />
+                  <button class="main-btn">Subscribe</button>
+                </form> -->
+              <!-- </div> --> 
+            </div> 
+          </div>
+          <!-- row -->
+        </div>
+        <!-- subscribe area -->
+        <div class="footer-widget pb-100">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-8">
+              <div
+                class="footer-about mt-50 wow fadeIn"
+                data-wow-duration="1s"
+                data-wow-delay="0.2s"
+              >
+                <a class="logo" href="javascript:void(0)">
+                  <img src="{% static 'assets/images/logo/cgf.jpg' %}" alt="logo" />
+                </a>
+                <p class="text">
+                Siege social: Boulevard du 30 Août, Lome Tokoin Ouest-Commune de Golfe 5,
+                quartier Cassablanca, 237 Rue Akadjame 
+
+                </p>
+                <ul class="social">
+                  <li>
+                    <a href="javascript:void(0)">
+                      <i class="lni lni-facebook-filled"> </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <i class="lni lni-twitter-filled"> </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <i class="lni lni-instagram-filled"> </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <i class="lni lni-linkedin-original"> </i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+              <!-- footer about -->
+            </div>
+            <div class="col-lg-5 col-md-7 col-sm-12">
+              <div class="footer-link d-flex mt-50 justify-content-sm-between">
+                <div
+                  class="link-wrapper wow fadeIn"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.4s"
+                >
+                  <div class="footer-title">
+                    <h4 class="title">Quick Link</h4>
+                  </div>
+                  <ul class="link">
+                    <li><a href="javascript:void(0)">Road Map</a></li>
+                    <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                    <li><a href="javascript:void(0)">Refund Policy</a></li>
+                    <li><a href="javascript:void(0)">Terms of Service</a></li>
+                    <li><a href="javascript:void(0)">Pricing</a></li>
+                  </ul>
+                </div>
+                <!-- footer wrapper -->
+                <div
+                  class="link-wrapper wow fadeIn"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.6s"
+                >
+                  <div class="footer-title">
+                    <h4 class="title">Resources</h4>
+                  </div>
+                  <ul class="link">
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li><a href="javascript:void(0)">Page</a></li>
+                    <!-- <li><a href="javascript:void(0)">Portfolio</a></li> -->
+                    <!-- <li><a href="javascript:void(0)">Blog</a></li> -->
+                    <li><a href="javascript:void(0)">Contact</a></li>
+                  </ul>
+                </div>
+                <!-- footer wrapper -->
+              </div>
+              <!-- footer link -->
+            </div>
+            <div class="col-lg-3 col-md-5 col-sm-12">
+              <div
+                class="footer-contact mt-50 wow fadeIn"
+                data-wow-duration="1s"
+                data-wow-delay="0.8s"
+              >
+                <div class="footer-title">
+                  <h4 class="title">Contact Us</h4>
+                </div>
+                <ul class="contact">
+                  <li>+228 90290223/ 90016109/ </li>
+                  <li> Immeuble N 69.11BP 64, Lome-Togo </li>
+                  <!-- <li>
+                    Agoè Sogbossito <br />
+                    Rue Abass Bonfo
+                  </li> -->
+                </ul>
+              </div>
+              <!-- footer contact -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- footer widget -->
+        <div class="footer-copyright">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="copyright d-sm-flex justify-content-between">
+                <div class="copyright-content">
+                  <p class="text">
+                    Designed and Developed by
+                    <a href="https://togotulawo.com" rel="nofollow">HOTCHI-TECH</a>
+                  </p>
+                </div>
+                <!-- copyright content -->
+              </div>
+              <!-- copyright -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- footer copyright -->
+      </div>
+      <!-- container -->
+      <div id="particles-2"></div>
+    </footer>
+    <!-- ====== FOOTER PART ENDS ====== --> 
+
+    <!--====== BACK TOP TOP PART START ======-->
+    <a href="#" class="back-to-top"> <i class="lni lni-chevron-up"> </i> </a>
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+    <!--====== Javascript Files ======-->
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'assets/js/count-up.min.js' %}"></script>
+    <script src="{% static 'assets/js/particles.min.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+  </body>
+</html>
+
+{% load static %}

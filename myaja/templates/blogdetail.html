@@ -1,0 +1,65 @@
+{% extends "accueil.html" %}
+{% block content %}
+{% load static %}
+ <!--====== SERVICES PART START ======-->
+ <section id="features" class="services-area pt-120">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="section-title text-center pb-40">
+            <div class="line m-auto"></div>
+            <h3 class="title">
+                
+              <span> </span>
+            </h3>
+          </div>
+          <!-- section title -->
+        </div>
+      </div>
+      <!-- row -->
+      <div class="row justify-content-center">
+        {% for i in articles %}
+        <div class="col-lg-4 col-md-7 col-sm-8">
+          <div
+            class="single-services text-center mt-30 wow fadeIn"
+            data-wow-duration="1s"
+            data-wow-delay="0.2s"
+          >
+            <div class="services-icon">
+              <img
+                class="shape"
+                src="{{i.image.url}}"
+                alt="shape"
+              />
+              <!-- <img
+                class="shape-1"
+                src="{{i.image.url}}"
+                alt="shape"
+              /> -->
+              <!-- <i class="lni lni-baloon"> </i> -->
+            </div>
+            <div class="services-content mt-30">
+              <h4 class="services-title"> 
+                <a href="javascript:void(0)">{{i.titre}}</a>
+              </h4>
+              <p class="text">
+                {{i.description|truncatewords:5}}
+               
+              </p>
+              <a class="more" href="{% url 'blogdetail' %}"
+              >Plus de details<i class="lni lni-chevron-right"> </i>
+            </a>
+            </div>
+          </div>
+          <!-- single services -->
+        </div>
+{% endfor %}
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </section>
+  <!--====== SERVICES PART ENDS ======-->
+
+
+{% endblock %}
