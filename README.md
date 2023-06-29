@@ -1,0 +1,1 @@
+# ajatogo1
